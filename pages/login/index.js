@@ -9,7 +9,7 @@ import Link from "next/link";
 
 import http from "../../services/httpService";
 
-export default function index() {
+export default function Login() {
   const [showPass, setShowPass] = useState(false);
   const [loading, setLoading] = useState(false);
   const router = useRouter();
