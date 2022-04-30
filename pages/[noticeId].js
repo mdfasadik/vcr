@@ -35,14 +35,15 @@ export default function NoticeDetails({ notice }) {
               <ul>
                 <p className='font-medium text-lg'>Here are the links : </p>
                 {notice.data.supportingLinks.map((link) => (
-                  <a
-                    href={link.link}
-                    target='_blank'
-                    rel='noreferrer'
-                    key={link._id}
-                    className='text-primary underline font-medium text-lg'>
-                    {link.label}
-                  </a>
+                  <li key={link._id}>
+                    <a
+                      href={link.link}
+                      target='_blank'
+                      rel='noreferrer'
+                      className='text-primary underline font-medium text-lg'>
+                      {link.label}
+                    </a>
+                  </li>
                 ))}
               </ul>
             )}
