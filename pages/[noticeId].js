@@ -38,6 +38,7 @@ export default function NoticeDetails({ notice }) {
                   <a
                     href={link.link}
                     target='_blank'
+                    rel='noreferrer'
                     key={link._id}
                     className='text-primary underline font-medium text-lg'>
                     {link.label}
