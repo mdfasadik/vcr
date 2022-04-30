@@ -206,6 +206,7 @@ export default function EditNoiceForm({ defaultValue, showDeleteModal }) {
                     <a
                       href={links.link}
                       target='_blank'
+                      rel='noreferrer'
                       className='text-primary font-medium text-lg underline'>
                       {links.label}
                     </a>
