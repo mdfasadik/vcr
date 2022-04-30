@@ -65,10 +65,12 @@ export default function New({ devKey }) {
       supportingLinks = [];
     }
     const payload = { ...data, category, supportingLinks };
+    setLoading(true);
     const res = await http.post(
       process.env.NEXT_PUBLIC_API + "notice",
       payload
     );
+    setLoading(false);
     if (res.data) {
       toast.success(res.message);
       router.replace("/dashboard");
